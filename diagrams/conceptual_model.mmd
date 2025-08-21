@@ -1,0 +1,12 @@
+flowchart LR
+  P["Problem (UK Digital Divide)\n• First-level: limited broadband & devices; rural NI/Scotland; low-income households lack laptops/tablets\n• Second-level: low digital literacy (~11M adults), 65+, disabilities\n• Third-level: low outcomes/confidence across education, jobs, health; compounding factors (age, income, geography, disability)\n• Impact KPIs: coverage %, device ownership, Essential Digital Skills, service uptake"]
+  G["Gen AI Solution\n• Digital literacy tutors: step-by-step help (forms, passwords, safety)\n• Localised content: dialects, reading levels, multilingual support\n• Accessible UX: voice-first, large text, screen-reader-friendly, simplified flows\n• Mobile-first, low-bandwidth; offline/on-device options where feasible\n• Human-in-the-loop via mentors; integrate with libraries, councils, NHS/GOV.UK"]
+  B["Barriers\n• Technological: connectivity, old/shared devices, latency, interoperability\n• Ethical: bias/representativeness, opacity, privacy & GDPR\n• Social: trust, motivation, stigma; language/cultural mismatch\n• Organisational/policy: skills gaps, siloed funding, procurement/regulatory uncertainty"]
+  S["Strategies\n• Access: device/databank, public Wi‑Fi hubs, mobile-first, offline caches\n• Ethical design: representative data, community co-design, explainability, governance\n• Trust: hybrid human+AI delivery, mentors, guardrails & safety controls\n• Localisation & accessibility: multilingual, dialect-aware, universal design\n• Capacity & policy: staff upskilling, toolkits, procurement standards, align to UK Digital Strategy\n• Monitoring: evals, A/B tests, inclusion KPIs, cost/latency controls"]
+
+  P --> G --> B --> S
+
+  S -- "Mitigate" --> B
+  S -- "Refine" --> G
+  G -- "Reassess KPIs" --> P
+
