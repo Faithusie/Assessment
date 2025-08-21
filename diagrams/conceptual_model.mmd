@@ -1,0 +1,12 @@
+flowchart LR
+  P["Problem\n• Business pain points\n• Affected users/contexts\n• Target KPIs"]
+  G["Gen AI Solution\n• Task (assist, generate, classify, retrieve)\n• Modality & models\n• Data sources / RAG / tools\n• Integration points"]
+  B["Barriers\n• Data quality & privacy\n• Hallucinations & reliability\n• Cost, latency, scale\n• Compliance & governance\n• Adoption & UX"]
+  S["Strategies\n• Data governance & evals\n• Guardrails, prompts, constraints\n• RAG/finetune, caching, routing\n• Human-in-the-loop & feedback\n• Monitoring, A/B, cost controls"]
+
+  P --> G --> B --> S
+
+  S -- "Mitigate" --> B
+  S -- "Refine" --> G
+  G -- "Reassess KPIs" --> P
+
